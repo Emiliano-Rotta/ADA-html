@@ -1,0 +1,50 @@
+<!-- HTML Avanzado: ¿Como realizar  un formulario? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input 
+        id="nombre" 
+        type="text" 
+        placeholder="Ejemplo: Emiliano"
+        autocomplete=off
+        > <br>
+        <label for="apellido">Apellido:</label>
+        <input id="apellido" type="text" autocomplete=off><br>
+
+        <label for="contraseña">contraseña</label>
+        <input type="password" id="contraseña"><br>
+
+        <label for="edad">Edad:</label>
+        <input id="edad" type="number" min="1" max="100"><br>
+
+        <h4>Club de futbol</h4>
+        <label for="Boca">Boca</label>
+        <input type="radio" id="Boca" name="futbol">
+        <label for="River">River</label>
+        <input type="radio" id="River" name="futbol">
+        <label for="Instituto">Instituto</label>
+        <input type="radio" id="Instituto" name="futbol"><br>
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha" max="2006-01-01"> <br>
+        
+        <label for="color">Color preferido</label>
+        <input type="color" id="color"><br>
+
+        <label for="volumen">Volumen</label>
+        <input type="range" id="volumen"><br>
+
+        <input type="reset" value="Borrar datos">
+        <input type="submit" onclick="alert('mensaje enviado')">
+
+    </form>
+</body>
+</html>
